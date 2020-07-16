@@ -45,7 +45,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('del', function() {
-	return del.sync('/.dist');
+	return del.sync(['./dist', './app/css/*']);
 });
 
 gulp.task('build', function(callback) {
